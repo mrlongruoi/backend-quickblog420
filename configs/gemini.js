@@ -4,7 +4,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_GEMINI_AI_API_KEY });
 
 async function main(prompt) {
   const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash-preview",
+    model: "gemini-2.5-pro",
     contents: prompt,
   });
   return response.text;
